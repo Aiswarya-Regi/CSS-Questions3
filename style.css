@@ -1,0 +1,108 @@
+.parent{
+    display: flex;
+    justify-content: space-between;
+}
+.nav1{
+    border:0;
+    margin-left: 15px;
+    margin-top: 10px;
+    
+}
+.nav2{
+    margin-left: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.p1{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+/* Q:1 create a box and increase its width on hover ,add transition on hover --> */
+
+.box_{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 3s;
+}
+.box_:hover{
+    width:300px;
+}
+
+/*Q:2 create a circle using border radius */
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: darkcyan;
+}
+
+/* Q:3 write a code to show implementation of media queries */
+.parent{
+    display: flex;
+    
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+   
+}
+.box1{
+    background-color: blue;
+}
+.box2{
+    background-color: rgb(0, 255, 132);
+}
+.box3{
+    background-color: rgb(178, 16, 140);
+}
+.box4{
+    background-color: rgb(204, 218, 48);
+}
+.box5{
+    background-color: rgb(248, 26, 26);
+}
+.box6{
+    background-color: #ff4800;
+}
+
+@media (min-width:340px) and (max-width:450px) {
+    .parent{
+        flex-direction: column;
+    }
+}
+
+
+/* Q:4 write a code to show animation example */
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.box__n{
+    width: 100px;
+    height: 100px;
+    
+}
+.ease{
+    animation: infinite ease-in-out;
+}
+.anim{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: myfirst 2s linear 2s infinite alternate;
+    }
+@keyframes myfirst {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    /* 50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;} */
+      }
+h4{
+    color: green;
+    }
